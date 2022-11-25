@@ -1,5 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
+import logo from './jwm-logo.jpg'
+
+
+
+
+
+
 
 
 type Props = {}
@@ -10,16 +18,21 @@ function Header({}: Props) {
         <nav className='flex justify-between'>
 
         
-                 <div>
+                 <div className='h-28 w-38 ml-9 sm:w-28 md:w-44 flex-shrink-0'>
+                  <Link href='/homelink '>
+                    <Image className="w-full h-full object-contain"
+                    src={logo}
+                    width={80}
+                    height={100}
+                    className='border-none'/>
                     <h1> Church Logo section </h1>
-                    
+                    </Link>
                     </div>
 
                     
             <div className='items-center flex space-x-9'>
 
                 <p className='hidden md:inline-flex cursor-pointer font-bold'>Home</p>
-                <p className='hidden md:inline-flex cursor-pointer font-bold'>Message directly</p>
                 <p className='hidden md:inline-flex cursor-pointer font-bold'>Contact Us</p>
                 <p className='hidden md:inline-flex cursor-pointer font-bold'>Tithes and Offerings</p>
 
@@ -35,13 +48,13 @@ function Header({}: Props) {
             
             </nav>
 
-            <div class="flex m-12 justify-center items-center w-10/12 bg-black min-h-[250px] relative rounded-[25px]">
+            <div class="flex m-9 mx-auto justify-center items-center w-[72rem]  bg-sky-400 opacity-20 min-h-[250px] relative rounded-[25px]"> Jesus Winner Ministry</div>
          
-         <div className='mt-12 max-w-2xl mx-auto p-4 bg-red-300 rounded-2xl'  >
+         <div className='w-[32rem] mx-auto p-4 bg-red-300 rounded-2xl'  >
             
-<Link href="/ptagspage" >
+<Link href="/ptagspage"  >
 
-<nav className='flex space-x-6 text-sm items-center'>
+<nav className='flex space-x-6 text-sm'>
     <p className='md:inline-flex cursor-pointer font-bold hover:links'>Branches</p>
     <p className='md:inline-flex cursor-pointer font-bold hover:links'>Events</p>
     <p className='md:inline-flex cursor-pointer font-bold hover:links'>Know your Pastors</p>
@@ -56,9 +69,11 @@ function Header({}: Props) {
 </div>
 
 
-
+<div className='ml-4 space-x-5 inline-flex border-2 border-blue-600 rounded-[12px] p-2 sm:px-5 flex-1'> 
+<h1>Search Icon</h1> 
+<input placeholder='Enter here' className='outline-none flex-1'/>
+   </div >
        
-jwm</div>
 
 
 
