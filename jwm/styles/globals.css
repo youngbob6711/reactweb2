@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+         .btns {
+            @apply bg-blue-600 text-white px-3 py-4 rounded font-bold cursor-pointer;
+        }
+        .links {
+            @apply hover:text-blue-600 hover:underline;
+        }
+
+
+}
