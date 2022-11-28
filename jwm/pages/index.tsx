@@ -1,5 +1,6 @@
 
 
+import Footerend from '../components/Footerend'
 import Header from '../components/Header'
 
 const Home = () => {
@@ -8,7 +9,16 @@ const Home = () => {
      
 
      <Header />
+
+
+
+
+     <Footerend />
+     
     </div>
+
+
+
   )
 }
 
